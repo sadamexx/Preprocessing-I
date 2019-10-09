@@ -138,10 +138,32 @@ html,
 body {
   height: 100%;
 }
-header {
-  background-image: url('../images');
+@font-face {
+  font-family: 'Big Shoulders Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Big Shoulders Text Regular'), local('BigShouldersText-Regular'), url(https://fonts.gstatic.com/s/bigshoulderstext/v1/55xxezRtP9G3CGPIf49hxc8P0eytUxBcm4Z_.ttf) format('truetype');
 }
-nav {
+body {
+  line-height: 2;
+}
+section {
+  padding: 4% 0;
+}
+header {
+  background-image: url('../images/bamboo.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25vh;
+}
+header .nav {
   display: flex;
   justify-content: space-between;
+}
+header .nav .links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }

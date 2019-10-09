@@ -57,18 +57,39 @@ table {
 	border: 1px solid orange;
 }
 
-html, body {
-	height: 100%;
-	}
+
+@import url(https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap);
+@main-font: 'Big Shoulders Text', cursive;
+
+body{
+	line-height:2;
+	font-family: @mainfont;
+}
+section{
+	padding:4% 0;
+}
 
 // HEADER SECTION STYLE
 
 header{
-	background-image:url('../images')
-}
-nav{
-	display:flex;
-	justify-content: space-between;
-}
+	background-image:url('../images/bamboo.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 25vh;
+	nav {
+		display:flex;
+		.a{
+			justify-content: space-between;
+			width:60%;
+			align-items: center;
+		}
+	}//ends nav container
+}//Ends header
+
+
+
+
+
 
 
